@@ -16,11 +16,10 @@
       crossorigin="anonymous"
     />
 
-    <title>BREAD</title>
+    <title>Hello, world!</title>
   </head>
   <body>
-    <h1 class="container">BREAD (Browse, Read, Edit, Add, Delete)</h1>
-    <h2 class="container">Filter</h2>
+    <h1 class="container">Edit</h1>
 
     <form>
       <div class="container">
@@ -122,60 +121,21 @@
             </label>
             <div class="row col-sm-6">
               <select class="form-control" id="exampleFormControlSelect1">
-                <option>--Chose the Bolean--</option>
-                <option>true</option>
-                <option>false</option>
+                <option>Bolean</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
               </select>
             </div>
             </div>
           </div>
         </div>
         <div class ="container">
-          <button type="button" class="btn btn-primary">Search</button>
+          <button type="button" class="btn btn-primary">Save</button>
+          <a class="btn btn-primary" href="/" role="button">Back</a>
         </div>
     </form>
-    <br>
-    <table class="table container">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">String</th>
-          <th scope="col">Integer</th>
-          <th scope="col">Float</th>
-          <th scope="col">Date</th>
-          <th scope="col">Bolean</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% json.forEach((item, index) => {%>
-        <tr>
-          <th scope="row"><%=item.Id%></th>
-          <td><%= item.String %></td>
-          <td><%= item.Integer %></td>
-          <td><%= item.Float %></td>
-          <td><%= item.Date %></td>
-          <td><%= item.Bolean %></td>
-          <td>
-            <a class="btn btn-success" href="/add/edit" role="button">Edit</a>
-            <button type="button" class="btn btn-danger">Delete</button>
-          </td>
-        </tr>
-        <%})%>
-      </tbody>
-    </table>
-    <nav aria-label="Page navigation example">
-      <ul class="container pagination">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-    <a class="btn btn-primary" href="/add" role="button">add</a>
-    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
