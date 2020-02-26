@@ -1,18 +1,14 @@
 [
-    {"Id": 1,
-    "String": "Testing Data",
-    "Integer": 12,
-    "Float": 1.45,
-    "Date" :"12 Desember 2017",
-    "Bolean" : "true"
-},
-
-{
-    "Id": 2,
-    "String": "Korong",
-    "Integer": 12,
-    "Float": 2,
-    "Date" :"12 Desember 2017",
-    "Bolean" : "false"
-}
+   {
+      "string": "Eko",
+      "integer": "99",
+      "float": "9,5",
+      "date": "2020-02-01"
+   },
+   {
+      "string": "Romi",
+      "integer": "99",
+      "float": "9,5",
+      "date": "2020-02-04"
+   }
 ]

@@ -25,106 +25,69 @@
     <form>
       <div class="container">
         <div class="form-group row">
-          <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />id
+          <label class="col-sm-2 col-form-label">
+            <input type="checkbox" aria-label="Checkbox for following text input" />id
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="ID"
+            <input class="form-control" type="text" placeholder="ID"
             />
           </div>
         </div>
       </div>
       <div class="container">
         <div class="form-group row">
-          <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />String
+          <label class="col-sm-2 col-form-label">
+            <input type="checkbox" aria-label="Checkbox for following text input" />String
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="String"
+            <input class="form-control" type="text" placeholder="String"
             />
           </div>
         </div>
       </div>
       <div class="container">
         <div class="form-group row">
-          <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
+          <label class="col-sm-2 col-form-label">
+            <input type="checkbox" aria-label="Checkbox for following text input"
             />Integer
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Integer"
+            <input class="form-control" type="number" placeholder="Integer"
             />
           </div>
         </div>
       </div>
       <div class="container">
         <div class="form-group row">
-          <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />Float
+          <label class="col-sm-2 col-form-label">
+            <input type="checkbox" aria-label="Checkbox for following text input" />Float
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Float"
+            <input class="form-control" type="text" placeholder="Float"
             /></div>
           </div>
         </div>
         <div class="container">
           <div class="form-group row">
-            <label class="col-sm-1 col-form-label">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />Date
+            <label class="col-sm-2 col-form-label">
+              <input type="checkbox" aria-label="Checkbox for following text input" />Date
             </label>
             <div class="row col-sm-3">
-              <input
-                class="form-control"
-                type="date"
-                placeholder="Date"
-              />to
-              <input
-                class="form-control"
-                type="date"
-                placeholder="Date"
+              <input class="form-control" type="date" placeholder="Date" />to
+              <input class="form-control" type="date" placeholder="Date"
               />
             </div>
           </div>
         </div>
         <div class="container">
           <div class="form-group row">
-            <label class="col-sm-1 col-form-label">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />Bolean
+            <label class="col-sm-2 col-form-label">
+              <input type="checkbox" aria-label="Checkbox for following text input" />Boolean
             </label>
             <div class="row col-sm-6">
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>--Chose the Bolean--</option>
-                <option>true</option>
-                <option>false</option>
+              <select class="form-control" id="exampleFormControlSelect1" placeholder ="--chose the bolean--">
+                <option>True</option>
+                <option>False</option>
               </select>
             </div>
             </div>
@@ -143,22 +106,22 @@
           <th scope="col">Integer</th>
           <th scope="col">Float</th>
           <th scope="col">Date</th>
-          <th scope="col">Bolean</th>
+          <th scope="col">Boolean</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
         <% json.forEach((item, index) => {%>
         <tr>
-          <th scope="row"><%=item.Id%></th>
-          <td><%= item.String %></td>
-          <td><%= item.Integer %></td>
-          <td><%= item.Float %></td>
-          <td><%= item.Date %></td>
-          <td><%= item.Bolean %></td>
+          <th scope="row"><%=index + 1%></th>
+          <td><%= item.string %></td>
+          <td><%= item.integer %></td>
+          <td><%= item.float %></td>
+          <td><%= item.date %></td>
+          <td><%= item.boolean %></td>
           <td>
-            <a class="btn btn-success" href="/add/edit" role="button">Edit</a>
-            <button type="button" class="btn btn-danger">Delete</button>
+            <a href="edit/<%= index %>"><button type="button" class="btn btn-primary">Edit</button></a>
+            <a href="delete/<%= index %>"><button type="button" class="btn btn-danger">Delete</button></a>
           </td>
         </tr>
         <%})%>

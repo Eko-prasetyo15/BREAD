@@ -20,20 +20,14 @@
   </head>
   <body>
     <h1 class="container">Add Data</h1>
-    <form>
+    <form method = "post">
       <div class="container">
         <div class="form-group row">
           <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />String
+            String
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="string"
+            <input class="form-control" type="text" id = "String" name ="string" placeholder="string"
             />
           </div>
         </div>
@@ -41,16 +35,10 @@
       <div class="container">
         <div class="form-group row">
           <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />Integer
+            Integer
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="integer"
+            <input class="form-control" type="number" id= "Integer" name= "integer" placeholder="integer"
             />
           </div>
         </div>
@@ -58,16 +46,10 @@
       <div class="container">
         <div class="form-group row">
           <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />Float
+            Float
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="float"
+            <input class="form-control" type="text" id="Float" name="float" placeholder="float"
             />
           </div>
         </div>
@@ -75,37 +57,28 @@
       <div class="container">
         <div class="form-group row">
           <label class="col-sm-1 col-form-label">
-            <input
-              type="checkbox"
-              aria-label="Checkbox for following text input"
-            />Date
+           Date
           </label>
           <div class="row col-sm-6">
-            <input
-              class="form-control"
-              type="end date"
-              placeholder="end date"
+            <input class="form-control" type="date" id ="Date" name= "date" placeholder="end date"
             /></div>
           </div>
         </div>
         <div class="container">
           <div class="form-group row">
             <label class="col-sm-1 col-form-label">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />Bolean
+              Bolean
             </label>
             <div class="row col-sm-6">
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Bolean</option>
-                <option>true</option>
-                <option>false</option>
+              <select class="form-control" id="Bolean" name="boolean" placeholder ="--Choose the bolean--">
+                <option>True</option>
+                <option>False</option>
               </select>
             </div>
         </div>
         <div class ="container">
-          <button type="submit" class="btn btn-primary">Save</button>
+          <button class="btn btn-primary"  type = "submit">Save</button>
+          <!-- <a class="btn btn-primary" type = "submit" href="/" role="button">Save</a> -->
           <a class="btn btn-primary" href="/" role="button">Back</a>
         </div>
     </form>
